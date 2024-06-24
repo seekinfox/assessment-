@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-size: small;
+}
+
+button {
+  border: none;
+  background-color: white;
+  transition: 0.2 all;
+}
+
+button:hover {
+  filter: brightness(99%);
+}
+
+button:active {
+  box-shadow: 0 0 5px lightgray;
+}

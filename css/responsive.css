@@ -1,0 +1,6 @@
+@media (max-width: var(--breakpoint-mobile)) {
+}
+
+@media (min-width: var(--breakpoint-tablet)) and (max-width: var(--breakpoint-desktop-small)) {
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>WebPage</title>
+  </head>
+  <body>
+    <nav class="navbar-main">
+      <button
+        id="menu-button"
+        aria-expanded="false"
+        aria-controls="menu-sidebar"
+      >
+        <img src="./assets/menu.svg" alt="menu" role="presentation" />
+      </button>
+    </nav>
+    <div
+      hidden="true"
+      class="menu-sidebar-backdrop"
+      id="menu-sidebar"
+      aria-labelledby="menu-sidebar"
+      aria-hidden="true"
+    >
+      <div class="menu-sidebar">
+        <div class="menu-sidebar-head">
+          <h2>Filter</h2>
+          <button id="menu-close-button">
+            <img src="./assets/close.svg" alt="menu" role="presentation" />
+          </button>
+        </div>
+        <div class="menu-sidebar-main">
+          <button id="clearAll">clear all</button>
+          <div>
+            <h3>Categories</h3>
+            <form id="">
+              <div id="" class="categories-container">
+                <!-- getting them from api, refer. js/index.js -->
+              </div>
+              
+              <div class="categories-container">
+                <h3>Sort</h3>
+                <button data-toggle="true" id="sort-by-price" type="button">Sort By Price<button>
+              </div>
+              <button type="submit">See results</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <header class="header-container">
+          <div class="header-hero">
+          </div>
+          <div class="category-title-box">
+            <h1 id="category-title"></h1>
+          </div>
+        </header>
+        <div>
+          <div class="search-form">
+            <input
+              id="search-input"
+              name="search"
+              placeholder="search product"
+            />
+          </div>
+        </div>
+        <div class="product-page-actions">
+          <div>
+            <button class="product-action-button">
+              <img src="./assets/slider.svg" alt="filter" role="presentation" />
+              <span>Filter Results</span>
+            </button>
+            <button id="sort-button" 
+            class="product-action-button">
+              <img src="./assets/sort.svg" alt="sort" role="presentation" />
+              <span>Sort Products</span>
+            </button>
+          </div>
+          <p id="total-result"></p>
+        </div>
+        <div class="all-products-container">
+          <div class="menu-sidebar-main">
+            <button id="clearAll">clear all</button>
+            <div>
+              <h3>Categories</h3>
+              <form id="category-form">
+                <div id="categoriesContainer" class="categories-container">
+                  <!-- getting them from api, refer. js/index.js -->
+                </div>
+                
+                <div class="categories-container">
+                  <h3>Sort</h3>
+                  <button data-toggle="true" id="sort-by-price" type="button">Sort By Price<button>
+                </div>
+                <button type="submit">See results</button>
+              </form>
+            </div>
+          </div>
+          <section id="all-products" class="all-products">
+            <!-- getting product item from api -->
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="js/index.js" defer type="module"></script>
+  </body>
+</html>
